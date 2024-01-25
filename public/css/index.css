@@ -56,6 +56,12 @@ body {
 	max-width: 40em;
 }
 
+excerpt {
+	padding: 1.5em;
+	font-size: 0.8125em;
+	background-color: #FFFFEE;
+}
+
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
