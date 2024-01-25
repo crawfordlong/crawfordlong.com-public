@@ -24,6 +24,12 @@ module.exports = function(eleventyConfig) {
 	// Watch content images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
 
+	  eleventyConfig.setFrontMatterParsingOptions({
+	    excerpt: true,
+	    excerpt_separator: "<!--e-->",
+	    excerpt_alias: 'excerpt'
+  });
+
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
