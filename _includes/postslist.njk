@@ -7,7 +7,7 @@
 
 		{% if post.excerpt  %}
 		<div>
-			{{ post.excerpt | md | safe }}
+			{{ post.data.excerpt | md | safe }}
 		</div>
 		{% endif %}
 		
