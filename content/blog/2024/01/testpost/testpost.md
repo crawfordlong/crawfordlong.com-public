@@ -1,8 +1,7 @@
-—-
+---
 title: Test post
-description: This post tests file organization.
-date: 2024-01-25
-tags:
-  - meta
-—-
+description: Testing content hierarchy
+date: 2024-01-26
+tags: test
+---
 This is a post.
