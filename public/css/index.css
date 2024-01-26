@@ -56,6 +56,7 @@ body {
 	max-width: 40em;
 }
 
+/* content list excerpt block */
 div.excerpt {
 	padding: 1.5em;
 	font-size: 0.8125em;
@@ -203,6 +204,7 @@ header {
 	line-height: 100%;
 	text-align: right;
 	margin-left: -1.5rem;
+	display: none;
 }
 .postlist-date,
 .postlist-item:before {
@@ -213,7 +215,7 @@ header {
 	word-spacing: -0.5px;
 }
 .postlist-link {
-	font-size: 1em; /* 19px /16 */
+	font-size: 0.8125m; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
 	padding-left: .25em;
