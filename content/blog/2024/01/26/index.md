@@ -5,7 +5,7 @@ date: 2024-01-26
 modified: 2024-01-26
 draft: false
 tags: test
-layout: _include/layouts/post.njk
+layout: layouts/post.njk
 ---
 herbivores, man, I don't know
 ---
