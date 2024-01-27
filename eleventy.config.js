@@ -19,10 +19,10 @@ module.exports = function(eleventyConfig) {
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css" 
 	});
 
-	eleventyConfig.addPassthroughCopy({"**/*.jpg"});
-	eleventyConfig.addPassthroughCopy({"**/*.jpeg"});
-	eleventyConfig.addPassthroughCopy({"**/*.webp"});
-	eleventyConfig.addPassthroughCopy({"**/*.png"});
+	eleventyConfig.addPassthroughCopy("**/*.jpg");
+	eleventyConfig.addPassthroughCopy("**/*.jpeg");
+	eleventyConfig.addPassthroughCopy("**/*.webp");
+	eleventyConfig.addPassthroughCopy("**/*.png");
 
 	eleventyConfig.addFilter("md", function (content = "") {
 	  return markdownIt({ html: true }).render(content);
