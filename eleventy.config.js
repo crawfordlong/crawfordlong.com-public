@@ -16,12 +16,13 @@ module.exports = function(eleventyConfig) {
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
-		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css", 
-		"**/*.jpg", 
-		"**/*.png",
-		"../.webp",
-		"**/*.jpeg"
+		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css" 
 	});
+
+	eleventyConfig.addPassthroughCopy({"**/*.jpg"});
+	eleventyConfig.addPassthroughCopy({"**/*.jpeg"});
+	eleventyConfig.addPassthroughCopy({"**/*.webp"});
+	eleventyConfig.addPassthroughCopy({"**/*.png"});
 
 	eleventyConfig.addFilter("md", function (content = "") {
 	  return markdownIt({ html: true }).render(content);
