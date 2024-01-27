@@ -16,7 +16,11 @@ module.exports = function(eleventyConfig) {
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
-		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
+		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css", 
+		"**/*.jpg", 
+		"**/*.png",
+		"../.webp",
+		"**/*.jpeg"
 	});
 
 	eleventyConfig.addFilter("md", function (content = "") {
@@ -27,11 +31,11 @@ module.exports = function(eleventyConfig) {
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
 	// Watch content images for the image pipeline.
-	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg,jpg}");
 
 	  eleventyConfig.setFrontMatterParsingOptions({
 	    excerpt: true,
-	    excerpt_separator: "<!--e-->",
+	    excerpt_separator: "---",
 	    excerpt_alias: 'excerpt'
   });
 
