@@ -244,7 +244,7 @@ header {
 
 /* Tags list */
 .post-metadata {
-	display: inline-flex;
+	/*display: inline-flex;*/
 	flex-wrap: wrap;
 	gap: .5em;
 	list-style: none;
