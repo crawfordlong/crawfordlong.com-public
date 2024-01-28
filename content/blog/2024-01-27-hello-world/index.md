@@ -5,7 +5,7 @@ date: 2024-01-27
 modified: 2024-01-27
 draft: false
 tags: [meta]
-layout: _includes/layouts/post.njk
+layout: layouts/post.njk
 ---
 Nobody blogs any more.
 ---
