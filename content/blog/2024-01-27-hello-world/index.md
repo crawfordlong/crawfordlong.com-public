@@ -3,9 +3,9 @@ title: 'Hello World'
 description: 'Initial journal entry'
 date: 2024-01-27
 modified: 2024-01-27
-draft: true
+draft: false
 tags: [meta]
-layout: _include/layouts/post.njk
+layout: _includes/layouts/post.njk
 ---
 Nobody blogs any more.
 ---
