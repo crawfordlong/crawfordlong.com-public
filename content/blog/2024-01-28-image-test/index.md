@@ -7,5 +7,5 @@ draft: false
 tags: [test]
 layout: _include/layouts/post.njk
 ---
-![a badger](/blog/2024-01-28-image-test/badger.jpg)
+![badger](/blog/2024-01-28-image-test/badger.jpg)
 ---
