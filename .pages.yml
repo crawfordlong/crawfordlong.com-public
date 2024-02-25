@@ -1,4 +1,7 @@
-media: content/blog
+media: 
+  input: content/blog
+  output: /blog
+  categories: [ image ]
 content:
   - name: posts
     label: Posts
