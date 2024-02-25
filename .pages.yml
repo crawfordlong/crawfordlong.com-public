@@ -8,7 +8,7 @@ content:
       - { name: title, label: Title, type: string }
       - { name: description, label: Description, type: string, options: { maxlength: 160 } }
       - { name: layout, hidden: true, default: layouts/post.njk, type: string }
-      - { name: draft, label: Publish, default: true, type: boolean }
+      - { name: draft, label: Draft, default: false, type: boolean }
       - { name: date, label: Date, type: date }
       - { name: tags, label: Tags, type: string }
       - { name: body, label: Body, type: rich-text }
